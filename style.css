@@ -1,0 +1,76 @@
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,200;1,300&display=swap');
+
+*{
+    font-family: "Poppins", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+botton{
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+/* img{
+    width: 100%;
+} */
+
+/* PREIMPOSTATI */
+:root{
+    --white-color: #fff;
+    --dark-color: #252525;
+    --sabbia-color: #c9a435;
+
+    --font-size-s:0.9rem;
+    --font-size-m:1.25rem;
+    --font-size-l:2rem;
+    --font-size-xl:2.5rem;
+
+    --font-weight-normal:400;
+    --font-weight-medium:500;
+    --font-weight-bold:700;
+
+    --border-radius-s:8px;
+    --border-radius-m:30px;
+    --border-radius-cerchio:50%;
+
+    --sito-max-widht:1300px;
+}
+
+/* navbar */
+header{
+    background: var(--sabbia-color);
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.navbar .nav-menu{
+    display: flex;
+    gap: 10px;
+}
+.navbar .nav-menu .nav-link{
+    padding: 10px 25px;
+    /* background: var(); DA VEDERE */
+    /* border-radius: var(); DA VEDERE */
+    color: var(--white-color);
+    font-size: var(--font-size-m);
+    transition: 0.3s ease;
+}
+.navbar .nav-menu .nav-link:hover{
+    color: var(--sabbia-color);
+    background: var(--white-color); 
+    border-radius: var(--border-radius-m); 
+}
+.navbar .nav-logo img{
+    width: 10rem;
+    /* margin: 1rem; */
+}
