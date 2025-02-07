@@ -13,7 +13,7 @@ ul{
 a{
     text-decoration: none;
 }
-botton{
+button{
     cursor: pointer;
     border: none;
     background: none;
@@ -26,7 +26,7 @@ botton{
 :root{
     --white-color: #fff;
     --dark-color: #252525;
-    --sabbia-color: #c9a435;
+    --sabbia-color: #e4d67b7f;
 
     --font-size-s:0.9rem;
     --font-size-m:1.25rem;
@@ -40,37 +40,26 @@ botton{
     --border-radius-s:8px;
     --border-radius-m:30px;
     --border-radius-cerchio:50%;
-
-    --sito-max-widht:1300px;
 }
-
-/* navbar */
-header{
-    background: var(--sabbia-color);
-}
+/* NAVBAR */
 .navbar{
+    background-color: var(--white-color);
+}
+/* qwery */
+.nav-img{
+    height: 10vh;
+    margin-left: 60%;
+}
+.navbar-collapse{
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 }
-.navbar .nav-menu{
-    display: flex;
-    gap: 10px;
+/* qwery */
+.collapse .navbar-nav .nav-item:hover{
+    background-color: var(--sabbia-color);
+    border-radius: 30px;
+    transition: 1.5s ease;
 }
-.navbar .nav-menu .nav-link{
-    padding: 10px 25px;
-    /* background: var(); DA VEDERE */
-    /* border-radius: var(); DA VEDERE */
-    color: var(--white-color);
-    font-size: var(--font-size-m);
-    transition: 0.3s ease;
-}
-.navbar .nav-menu .nav-link:hover{
-    color: var(--sabbia-color);
-    background: var(--white-color); 
-    border-radius: var(--border-radius-m); 
-}
-.navbar .nav-logo img{
-    width: 10rem;
-    /* margin: 1rem; */
-}
+
+
+/* HEADER */
